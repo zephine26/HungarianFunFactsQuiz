@@ -19,4 +19,5 @@
     <string name="question_6_answer_a">Curcuma</string>
     <string name="question_6_answer_b">Paprika</string>
     <string name="question_6_answer_c">Thyme</string>
+    <string name="submit_button_text">Submit</string>
 </resources>
