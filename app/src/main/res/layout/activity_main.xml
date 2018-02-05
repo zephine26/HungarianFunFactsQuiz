@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="30dp"
+            android:layout_margin="@dimen/layout_margin"
             android:orientation="vertical">
 
             <TextView
@@ -22,7 +22,7 @@
                 android:layout_marginBottom="5dp"
                 android:gravity="center_horizontal"
                 android:text="@string/quiz_title"
-                android:textSize="20sp"
+                android:textSize="@dimen/title_text"
                 android:textStyle="bold" />
 
             <TextView
@@ -152,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/answer_margin_top"
                 android:id="@+id/question_5_answer"
+                android:inputType="number"
                 />
 
             <TextView
@@ -190,10 +191,13 @@
             </RadioGroup>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/question_margin_top"
+                android:layout_marginBottom="@dimen/question_margin_top"
+                android:gravity="center_horizontal"
                 android:text="@string/submit_button_text"
+                android:textSize="@dimen/title_text"
                 android:id="@+id/submit_button"
                 android:onClick="ShowResult"
                 />
