@@ -6,6 +6,7 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // question 3
-        if (question3EditText.getText().toString().toLowerCase() == "pannonia") {
+        if (question3EditText.getText().toString().toLowerCase().equals("pannonia")) {
             score += 1;
         }
 
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         // show the score
         Context context = getApplicationContext();
         String message = "You scored " + String.valueOf(score) + "/6";
-        Toast toast = Toast.makeText(context, message, Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(context, message, Toast.LENGTH_SHORT);
         toast.show();
 
         // reset the score

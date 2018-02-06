@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/hun_flag"
     tools:context="com.example.android.hungarianfunfactsquiz.MainActivity">
 
     <ScrollView
@@ -23,7 +24,8 @@
                 android:gravity="center_horizontal"
                 android:text="@string/quiz_title"
                 android:textSize="@dimen/title_text"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -31,68 +33,35 @@
                 android:layout_marginTop="@dimen/question_margin_top"
                 android:text="@string/question_1_question"
                 android:textStyle="bold"
+                android:textColor="@android:color/white"
                 />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/answer_margin_top">
+                android:layout_marginTop="@dimen/answer_margin_top"
+                >
 
                 <RadioButton
+                    android:id="@+id/question_1_answer_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_1_answer_a"
-                    android:id="@+id/question_1_answer_a"
-                    />
+                    android:textColor="@android:color/white"/>
 
                 <RadioButton
+                    android:id="@+id/question_1_answer_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_1_answer_b"
-                    android:id="@+id/question_1_answer_b"
-                    />
+                    android:textColor="@android:color/white"/>
 
                 <RadioButton
+                    android:id="@+id/question_1_answer_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_1_answer_c"
-                    android:id="@+id/question_1_answer_c"
-                    />
-
-            </RadioGroup>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_margin_top"
-                android:text="@string/question_2_question"
-                android:textStyle="bold" />
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/answer_margin_top">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/question_2_answer_a"
-                    android:id="@+id/question_2_answer_a"
-                    />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/question_2_answer_b"
-                    android:id="@+id/question_2_answer_b"
-                    />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/question_2_answer_c"
-                    android:id="@+id/question_2_answer_c"
-                    />
+                    android:textColor="@android:color/white"/>
 
             </RadioGroup>
 
@@ -102,10 +71,10 @@
                 android:layout_marginTop="@dimen/question_margin_top"
                 android:text="@string/question_3_question"
                 android:textStyle="bold"
-                />
+                android:textColor="@android:color/holo_red_dark"/>
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/answer_margin_top"
                 android:id="@+id/question_3_answer"
@@ -115,14 +84,56 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/question_margin_top"
+                android:text="@string/question_2_question"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/answer_margin_top">
+
+                <RadioButton
+                    android:id="@+id/question_2_answer_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_a"
+                    android:textColor="@android:color/white"/>
+
+                <RadioButton
+                    android:id="@+id/question_2_answer_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_b"
+                    android:textColor="@android:color/white"/>
+
+                <RadioButton
+                    android:id="@+id/question_2_answer_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_2_answer_c"
+                    android:textColor="@android:color/white"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/question_margin_top"
                 android:text="@string/question_4_question"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/answer_margin_top"
                 android:text="@string/question_4_answer_a"
                 android:id="@+id/question_4_answer_a"
+                android:textColor="@android:color/white"
                 />
 
             <CheckBox
@@ -130,6 +141,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_4_answer_b"
                 android:id="@+id/question_4_answer_b"
+                android:textColor="@android:color/white"
                 />
 
             <CheckBox
@@ -137,6 +149,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question_4_answer_c"
                 android:id="@+id/question_4_answer_c"
+                android:textColor="@android:color/white"
                 />
 
             <TextView
@@ -145,10 +158,11 @@
                 android:layout_marginTop="@dimen/question_margin_top"
                 android:text="@string/question_5_question"
                 android:textStyle="bold"
+                android:textColor="@android:color/holo_red_dark"
                 />
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/answer_margin_top"
                 android:id="@+id/question_5_answer"
@@ -160,7 +174,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/question_margin_top"
                 android:text="@string/question_6_question"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -172,6 +187,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/question_6_answer_a"
                     android:id="@+id/question_6_answer_a"
+                    android:textColor="@android:color/white"
                     />
 
                 <RadioButton
@@ -179,6 +195,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/question_6_answer_b"
                     android:id="@+id/question_6_answer_b"
+                    android:textColor="@android:color/white"
                     />
 
                 <RadioButton
@@ -186,21 +203,27 @@
                     android:layout_height="wrap_content"
                     android:text="@string/question_6_answer_c"
                     android:id="@+id/question_6_answer_c"
+                    android:textColor="@android:color/white"
                     />
 
             </RadioGroup>
 
-            <Button
-                android:layout_width="match_parent"
+            <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/question_margin_top"
-                android:layout_marginBottom="@dimen/question_margin_top"
-                android:gravity="center_horizontal"
-                android:text="@string/submit_button_text"
-                android:textSize="@dimen/title_text"
-                android:id="@+id/submit_button"
-                android:onClick="ShowResult"
-                />
+                android:layout_width="match_parent">
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="ShowResult"
+                    android:text="@string/submit_button_text"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
 
 
         </LinearLayout>

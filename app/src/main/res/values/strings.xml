@@ -1,21 +1,21 @@
 <resources>
     <string name="app_name">HungarianFunFactsQuiz</string>
     <string name="quiz_title">Hungarian Fun Fact Quiz</string>
-    <string name="question_1_question">Which city has the second largest Hungarian population?</string>
+    <string name="question_1_question">1. Which city has the second largest Hungarian population?</string>
     <string name="question_1_answer_a">London</string>
     <string name="question_1_answer_b">Budapest</string>
     <string name="question_1_answer_c">Tihany</string>
-    <string name="question_2_question">Which vitamin was discovered in Hungary?</string>
+    <string name="question_2_question">3. Which vitamin was discovered in Hungary?</string>
     <string name="question_2_answer_a">Vitamin A</string>
     <string name="question_2_answer_b">Vitamin B12</string>
     <string name="question_2_answer_c">Vitamin C</string>
-    <string name="question_3_question">What was the Roman name for Hungary?</string>
-    <string name="question_4_question">Which of these were invented by Hungarians?</string>
+    <string name="question_3_question">2. What was the Roman name for Hungary?</string>
+    <string name="question_4_question">4. Which of these were invented by Hungarians?</string>
     <string name="question_4_answer_a">Merge sort algorithm</string>
     <string name="question_4_answer_b">Rubic’s cube</string>
     <string name="question_4_answer_c">BASIC computer programming language</string>
-    <string name="question_5_question">How old is Hungary today?</string>
-    <string name="question_6_question">Which spice is used the most often in Hungarian cuisine?</string>
+    <string name="question_5_question">5. How old is Hungary today?</string>
+    <string name="question_6_question">6. Which spice is used the most often in Hungarian cuisine?</string>
     <string name="question_6_answer_a">Curcuma</string>
     <string name="question_6_answer_b">Paprika</string>
     <string name="question_6_answer_c">Thyme</string>
